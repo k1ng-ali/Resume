@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    border: dimgrey 1px solid;
+    border-radius: 10px;
+    padding: 0;
+    width: 100rem;
+    max-width: 900px;
+    margin: 20px;
+    box-shadow: 0 0 10px #b5b5b5;
+}
+
+.name-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: dimgrey 1px solid;
+    margin-bottom: 10px;
+    width: calc(100% - 40px);
+    padding: 20px;
+}
+.name{
+    margin-top: 5px;
+}
+
+.speciality{
+    font-weight: 400;
+}
+
+.photo{
+    width: 5rem;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: calc(100% - 40px);
+    border-bottom: dimgrey 1px solid;
+}
+
+.about-title{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.about-text{
+    font-weight: 400;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    padding: 20px;
+    border-bottom: dimgrey 1px solid;
+}
+
+.coding-languages{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: end;
+    margin-bottom: 30px;
+}
+
+.lang{
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.svg{
+    width: 3rem;
+}
+.lang-ico{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.ico-title{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.lang-lvl{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #b5b5b5;
+    margin-top: 20px;
+}
+.lang-lvl::before{
+    content: '';
+    height: 10px;
+    border-radius: 5px;
+    background-color: #2f2f2f;
+    position: absolute;
+}
+
+.java-lvl::before{
+    width: 75%;
+}
+
+.cc-lvl::before{
+    width: 25%;
+}
+
+.js-lvl::before{
+    width: 50%;
+}
+
+.html-lvl::before{
+    width: 80%;
+}
+
+.react-lvl::before{
+    width: 50%;
+}
+.django{
+    width: 4rem;
+}
+
+.django-lvl::before{
+    width: 40%;
+}
+
+.fastapi{
+    width: 5rem;
+}
+
+.fastapi-lvl::before{
+    width: 25%;
+}
+.javaFX-lvl::before{
+    width: 70%;
+}
+.git{
+    margin-top: 40px;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project{
+    margin: 10px;
+    border: dimgrey 1px solid;
+    border-radius: 7px;
+    box-shadow: 0 0 8px #b5b5b5;
+    width: 27%;
+    padding: 5px;
+    height: min-content;
+}
+
+.btn{
+    background-color: #2f2f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.contacts{
+    padding: 20px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contacts-title{
+
+}
+
+.contact-ico{
+    width: 2rem;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.toast {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
